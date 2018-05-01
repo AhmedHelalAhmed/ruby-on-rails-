@@ -6,9 +6,21 @@ class CreateUsers < ActiveRecord::Migration[5.1]
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.integer :gender
+      t.integer :gender, default: 0
 
       t.timestamps
     end
+
   end
 end
+
+#
+# def create_table
+#   #logic
+#   # yield
+#   table
+#   end
+# end
+#
+#
+
